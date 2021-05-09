@@ -1,0 +1,49 @@
+class Perpustakaan :
+	def __init__(self,id_perpustakaan,nama_perpustakaan) :
+		self.id_perpustakaan=id_perpustakaan
+		self.nama_perpustakaan=nama_perpustakaan
+
+	def tampilProfil(self):
+		
+
+class Item :
+	def __init__(self,id_item,id_perpustakaan,kategori,judul,penulis,penerbit,tahun_produksi, salinan) :
+		self.id_item=id_item
+		self.id_perpustakaan=id_perpustakaan
+		self.kategori=kategori
+		self.judul=judul
+		self.penulis=penulis
+		self.penerbit=penerbit
+		self.tahun_produksi=tahun_produksi
+		self.salinan=salinan
+
+class Pelanggan :
+	def __init__(self,id_pelanggan,type,nama,alamat,no_hp,email):
+		self.id_pelanggan=id_pelanggan
+		self.type=type
+		self.nama=nama
+		self.alamat=alamat
+		self.no_hp=no_hp
+		self.email=email
+
+class Peminjaman :
+	def __init__(self,id_pelanggan,tanggal_peminjaman,id_item,tanggal_pengembalian,biaya) :
+		self.id_pelanggan=id_pelanggan
+		self.tanggal_pengembalian=tanggal_pengembalian
+		self.id_item=id_item
+		self.tanggal_pengembalian=tanggal_pengembalian
+		self.biaya=biaya
+
+
+print("Memasukkan Data pada Tabel")
+print("1. Perpustakaan")
+print("2. Item")
+print("3. Pelanggan")
+print("4. Peminjaman")
+pilihan=int(input("Masukkan Pilihan : "))
+
+if(pilihan==1) :
+	id=input("Masukkan Id Perpustakaan     : ")
+	nama=input("Masukkan Nama Perpustakaan : ")
+	perpustakaan1=Perpustakaan(id,nama)
+	perpustakaan1.tampilProfil()
