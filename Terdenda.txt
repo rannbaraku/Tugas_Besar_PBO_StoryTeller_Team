@@ -1,0 +1,10 @@
+Data peminjaman terdenda 
+========================================
+ 
+ID Pelanggan         : P_001
+Tanggal Peminjaman   : 2021-01-01
+ID Item              : BOOK_005
+anggal Pengembalian  : 2021-04-04
+Biaya                : 3000
+Status               : Dikembalikan 
+
