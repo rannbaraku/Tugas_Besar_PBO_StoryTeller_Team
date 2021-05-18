@@ -58,7 +58,6 @@ def menu_utama() :
 
 			elif(pilihan==2) :
 				print("Menambahkan Item Perpustakaan GKU")
-				perpustakaan=Perpustakaan("ITERA_001","Perpustakaan GKU")
 				#abstraksi
 				perpustakaan.Tambah_item_perpus()
 
